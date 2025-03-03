@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown 渲染器</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.5.0/styles/atom-one-dark.css">
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="exportMarkdown()">导出为 Markdown</button>
+    <button onclick="exportDocx()">导出为 DOCX</button>
+  </div>
+  <div class="editor-container">
+    <textarea id="editor" placeholder="输入 Markdown（支持 LaTeX，如 $x^2$）"></textarea>
+    <div id="preview"></div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

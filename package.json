@@ -1,0 +1,35 @@
+{
+  "name": "markdown-renderer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "dependencies": {
+    "marked": "^4.0.0",
+    "mathjax": "^3.2.0",
+    "fs-extra": "^10.0.0",
+    "@electron/remote": "^2.0.1",
+    "highlight.js": "^11.5.0"
+  },
+  "devDependencies": {
+    "electron": "^15.0.0",
+    "@electron-forge/cli": "^6.0.0",
+    "@electron-forge/maker-zip": "^6.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "extraResource": ["resources/pandoc.exe", "math-to-text.lua"]
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": ["win32"]
+        }
+      ]
+    }
+  }
+}
