@@ -17,7 +17,7 @@
 
 1. 克隆项目到本地：
 ```bash
-git clone [你的仓库地址]
+git clone https://github.com/Sakura200603/markdown-renderer
 cd markdown-renderer
 ```
 
