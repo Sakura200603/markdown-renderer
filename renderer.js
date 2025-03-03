@@ -26,7 +26,10 @@ marked.setOptions({
     }
     // 如果代码块没有指定语言或语言不受支持，则自动检测语言进行高亮
     return hljs.highlightAuto(code).value;
-  }
+  },
+  // 启用表格支持
+  gfm: true,
+  tables: true
 });
 
 const pandocPath = path.join(__dirname, 'resources', 'pandoc.exe');

@@ -61,4 +61,46 @@ pre code {
   padding: 10px;
   border-radius: 5px;
   font-size: 14px;
+  background-color: #282c34;
+  color: #abb2bf;
+  overflow-x: auto;
+  border: 1px solid #3e4451;
+}
+
+/* Style for inline code */
+code {
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  background-color: #f0f0f0;
+  color: #e06c75;
+}
+
+/* Style for tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
 }
